@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  background-color: #fafafa;
+  font-family: "Roboto", "Font Awesome 5 Free", sans-serif;
+  line-height: 1.2rem;
+
+  div#root > section {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}

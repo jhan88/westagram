@@ -1,0 +1,13 @@
+section.UserProfileBar {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+
+  img.profileImg {
+    margin: 10px;
+  }
+
+  i {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,10 @@
+section.RoundProfile {
+  position: relative;
+  img.profileImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    padding: 2px;
+  }
+}

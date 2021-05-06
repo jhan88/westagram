@@ -1,0 +1,25 @@
+section.feedImg {
+  position: relative;
+  width: inherit;
+
+  button.goPrev {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  button.goNext {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  img {
+    object-fit: cover;
+    width: inherit;
+    height: 600px;
+  }
+}

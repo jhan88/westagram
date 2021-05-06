@@ -1,0 +1,9 @@
+section.UserAction {
+  padding: 0 10px;
+  ul.iconList {
+    display: flex;
+    li:last-of-type {
+      margin-left: auto;
+    }
+  }
+}

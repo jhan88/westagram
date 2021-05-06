@@ -1,0 +1,14 @@
+section.FeedComment {
+  padding: 0 10px;
+}
+
+section.addComment {
+  width: inherit;
+  border-top: 1px solid gray;
+  display: flex;
+  align-items: center;
+  button.add {
+    margin-left: auto;
+    color: blue;
+  }
+}
