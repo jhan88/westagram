@@ -1,18 +1,3 @@
 section.Profile {
   padding-top: 100px;
-  nav.profileNav {
-    ul {
-      border-top: 2px solid #d3d3d3;
-      display: flex;
-      justify-content: center;
-      color: #d3d3d3;
-      li {
-        border-top: 2px solid;
-        position: relative;
-        top: -2px;
-        padding: 1rem;
-        font-weight: 900;
-      }
-    }
-  }
 }

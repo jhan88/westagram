@@ -10,7 +10,7 @@ function Routes() {
       <GNB />
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/profile/:username" component={Profile} />
       </Switch>
     </BrowserRouter>
   );

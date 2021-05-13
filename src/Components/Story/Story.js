@@ -3,13 +3,15 @@ import RoundProfile from "../RoundProfile/RoundProfile";
 import "./Story.scss";
 
 function Story(props) {
-  const [storyStart, setStart] = useState(0);
+  const STORY_LENGTH = props.storyLength;
+
+  const [startIndex, setStartIndex] = useState(0);
 
   const goPrev = () => {
-    setStart(storyStart - 6);
+    setStartIndex(startIndex - STORY_LENGTH);
   };
   const goNext = () => {
-    setStart(storyStart + 6);
+    setStartIndex(startIndex + STORY_LENGTH);
   };
 
   return (
@@ -17,34 +19,33 @@ function Story(props) {
       <button
         className="goPrev"
         onClick={goPrev}
-        style={
-          storyStart === 0
-            ? { visibility: "hidden" }
-            : { visibility: "visible" }
-        }
+        style={{ visibility: startIndex === 0 ? "hidden" : "visible" }}
       >
         {"<"}
       </button>
-      {props.storyData.slice(storyStart, storyStart + 6).map((user, index) => {
-        return (
-          <div className="storyUser" key={index}>
-            <RoundProfile
-              username={user.username}
-              profileImg={user.profileImg}
-              size={"80px"}
-            />
-            <span className="username">{user.username}</span>
-          </div>
-        );
-      })}
+      {props.storyData
+        .slice(startIndex, startIndex + STORY_LENGTH)
+        .map((user, index) => {
+          return (
+            <div className="storyUser" key={index}>
+              <RoundProfile
+                username={user.username}
+                profileImg={user.profileImg}
+                size={"80px"}
+              />
+              <span className="username">{user.username}</span>
+            </div>
+          );
+        })}
       <button
         className="goNext"
         onClick={goNext}
-        style={
-          storyStart + 6 >= props.storyData.length
-            ? { visibility: "hidden" }
-            : { visibility: "visible" }
-        }
+        style={{
+          visibility:
+            startIndex + STORY_LENGTH >= props.storyData.length
+              ? "hidden"
+              : "visible",
+        }}
       >
         {">"}
       </button>

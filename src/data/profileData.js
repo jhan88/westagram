@@ -1,5 +1,5 @@
-const profileData = [
-  {
+const profileData = {
+  wecode1: {
     username: "wecode1",
     profileImg:
       "https://toppng.com/uploads/preview/cat-happy-cat-royalty-free-11562940748bu5jki9sei.png",
@@ -17,7 +17,7 @@ const profileData = [
       "https://images.unsplash.com/photo-1619360189152-eda205574fb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
     ],
   },
-  {
+  wecode2: {
     username: "wecode2",
     profileImg:
       "https://toppng.com/uploads/preview/raphic-royalty-free-stock-shepuppy-healthy-for-happy-do-cachorro-yorkshire-filhote-11563732027bbj6lxq76e.png",
@@ -36,6 +36,6 @@ const profileData = [
       "https://images.unsplash.com/photo-1619460850358-026905db836e?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60",
     ],
   },
-];
+};
 
 export default profileData;

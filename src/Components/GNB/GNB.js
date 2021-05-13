@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Icon from "../Icon/Icon";
 import "./GNB.scss";
 
@@ -11,7 +12,9 @@ function GNB() {
         </div>
         <ul className="iconList">
           <li>
-            <Icon className="fas fa-home" />
+            <Link to="/">
+              <Icon className="fas fa-home" />
+            </Link>
           </li>
           <li>
             <Icon className="far fa-paper-plane" />

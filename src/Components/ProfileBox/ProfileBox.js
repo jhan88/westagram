@@ -7,7 +7,6 @@ function ProfileBox(props) {
   return (
     <section className="ProfileBox">
       <RoundProfile
-        data={props.data}
         username={props.data.username}
         profileImg={props.data.profileImg}
       />

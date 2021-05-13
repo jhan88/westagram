@@ -1,7 +1,7 @@
-import Feed from "../../Components/Feed/Feed";
-import feedData from "../../data/feedData";
 import React, { useState, useEffect } from "react";
 import Loading from "../../Components/Loading/Loading";
+import Feed from "../../Components/Feed/Feed";
+import feedData from "../../data/feedData";
 import "./Main.scss";
 
 function Main() {
@@ -12,11 +12,12 @@ function Main() {
   };
 
   useEffect(() => {
-    getData();
+    setTimeout(() => {
+      getData();
+      console.log("Mount feedData");
+    }, 1000);
 
-    return () => {
-      console.log("Main will unmount");
-    };
+    return () => {};
   }, []);
 
   return (
